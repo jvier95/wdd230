@@ -14,7 +14,7 @@
     header img {
         margin-right: 10px;
         max-width: 20%; 
-        max-height: auto;
+        max-height: 200px;
         border: 2px solid #131516; 
     }
         nav {
@@ -29,8 +29,8 @@
             list-style-type: none;
             padding: 0;
             display: flex;
-            justify-content: space-around; /* Adjusted to evenly distribute links */
-            flex-grow: 1; /* Grow to occupy the available space */
+            justify-content: space-around; 
+            flex-grow: 1; 
         }
     
         nav li {
@@ -67,29 +67,28 @@
         }
     
         .card h3 {
-            background-color: #007ACC; /* Blue background for h3 */
-            color: #fff; /* White text color for h3 */
-            padding: 5px; /* Add padding to h3 */
-            margin: 0; /* Remove margin from h3 */
+            background-color: #007ACC; 
+            color: #fff; 
+            padding: 5px; 
+            margin: 0; 
             text-align: center;
         }
     
         
         main h2 {
-            text-align: center; /* Center the h2 */
-            grid-column: 1 / span 2; /* Span two columns */
-            margin-bottom: 20px; /* Add spacing below h2 */
+            text-align: center; 
+            grid-column: 1 / span 2;
+            margin-bottom: 20px; 
         }
     
    
-        
+    /* fixed the issue where I could not see the lastModified p element, I fixed it by removing the height from the footer style */   
     footer {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 100px; 
         background-color: #333; 
         color: #fff; 
     }
@@ -100,9 +99,10 @@
         vertical-align: middle; 
     }
 
-    #lastModified {
-        font-size: 14px; 
-        color: #fff; 
+    footer #lastModified {
+        
+        display: block; 
+        
     }
     
 }
