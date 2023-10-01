@@ -1,0 +1,226 @@
+@media screen and (max-width: 767px) {
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    /* Header styles */
+    #header-container,
+    #site-name-container,
+    #nav-site-container {
+      background-color: #FFD100;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    header h1 {
+      color: #4CAF50;
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+    }
+  
+    #site-name h2 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+    }
+  
+    #site-name p {
+      margin: 0;
+    }
+  
+    /* Navigation styles */
+    #nav-container {
+      display: block; /* Stack navigation vertically in small view */
+    }
+  
+    .navigation-menu #menu::before {
+      content: "\2630"; /* Hamburger icon for menu */
+      font-size: 24px;
+    }
+  
+    .navigation-menu #logo img {
+      max-width: 80px;
+    }
+  
+    .navigation-menu a {
+      text-decoration: none;
+      display: block; /* Display navigation items as blocks */
+      margin-bottom: 10px;
+      color: #000;
+      font-weight: bold;
+    }
+  
+    /* Site Purpose section styles */
+    #site-purpose {
+      margin-top: 20px; /* Add margin to separate from the navigation bar */
+    }
+  
+    #site-purpose .content {
+      display: flex;
+      align-items: center; /* Center-align content vertically */
+      justify-content: space-between; /* Distribute content evenly between columns */
+      flex-direction: row; /* Arrange text and image side by side */
+      height: auto; /* Remove fixed height for the content container */
+    }
+  
+    #site-purpose .text {
+      border: 2px solid #4CAF50; /* Circular border for text */
+      border-radius: 50%; /* Make the border circular */
+      padding: 10px; /* Adjust padding to fit text inside the border */
+      width: 50%; /* Set a percentage width for the circular text container */
+      box-sizing: border-box; /* Include padding within the width calculation */
+      text-align: center; /* Center-align text within the circular container */
+    }
+  
+    #site-purpose .image {
+      flex: 1; /* Take up all available space in the column */
+    }
+  
+    #site-purpose .image img {
+      max-width: 100%; /* Make the image responsive within the column */
+      height: auto; /* Allow the image to adjust its height automatically */
+    }
+  
+    #site-purpose h2 {
+      font-size: 18px; /* Adjust font size to fit inside the circular border */
+    }
+  
+    #site-purpose p {
+      font-size: 14px; /* Adjust font size to fit inside the circular border */
+      line-height: 1.4;
+    }
+  
+    /* Scenarios section styles */
+    #scenarios ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    #scenarios li {
+      margin-bottom: 20px;
+      background-color: #4CAF50; /* Background color for scenarios in small view */
+      border: 2px solid #4CAF50; /* Border for each scenario in small view */
+      padding: 15px;
+    }
+  
+    #scenarios h2 {
+      font-size: 20px;
+    }
+  
+    #scenarios h2 strong {
+      color: #FFF; /* Text color for scenario titles in small view */
+    }
+  
+    #scenarios p {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #FFF; /* Text color for scenario descriptions in small view */
+    }
+  
+    #scenarios h3 {
+      font-size: 16px;
+      color: #FFD100; /* Accent color for scenario subtitles in small view */
+    }
+  
+    /* Other sections */
+    #scenarios,
+    #color-schema,
+    #typography,
+    #wire-frame {
+      padding: 10px;
+      background-color: #FFF;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    /* Shared section title styles */
+    #site-purpose h2,
+    #scenarios h2,
+    #color-schema h2,
+    #typography h2,
+    #wire-frame h2 {
+      font-size: 20px;
+      color: #000000; /* Text color for section titles in small view */
+    }
+  
+    /* Color Schema and Typography sections */
+    #color-schema,
+    #typography {
+      width: 100%; /* Take up the full width of the screen */
+      height: auto; /* Auto height for responsiveness */
+      float: none; /* Remove float for stacking vertically */
+      padding: 20px;
+    }
+  
+    #color-schema {
+      background-color: #4CAF50;
+      color: #FFF; /* Text color for the Color Schema section in small view */
+    }
+  
+    #typography {
+      background-color: #FFD100;
+      color: #000; /* Text color for the Typography section in small view */
+    }
+  
+    /* Color palette styles */
+    .color-palette {
+      display: flex;
+      flex-wrap: wrap; /* Wrap color boxes when screen size reduces */
+      justify-content: space-between;
+    }
+  
+    .color-box {
+      width: calc(33.33% - 10px); /* Calculate width for 3 columns with spacing */
+      height: 60px; /* Adjust the height of each color box */
+      margin-bottom: 10px;
+      border: 2px solid #FFF;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    li {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    /* Typography details styles */
+    #typography ul {
+      list-style: none;
+      padding: 0;
+    }
+  
+    #typography li {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  
+    #typography p {
+      margin: 10px 0;
+    }
+  
+    /* Frame styles */
+    .frame {
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .frame img {
+      max-width: 100%;
+    }
+  
+    /* Footer styles */
+    footer {
+      background-color: #4CAF50;
+      color: #FFF;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    footer #flag {
+      max-height: 30px;
+      vertical-align: middle;
+    }
+  }
