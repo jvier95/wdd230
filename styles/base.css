@@ -32,6 +32,7 @@
     header h1 {
         text-align: left; 
         flex-grow: 1; 
+        color: #fff;
     }
 
 
